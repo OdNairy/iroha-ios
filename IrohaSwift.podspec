@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.author             = { "Soramitsu Co., Ltd." => "info@soramitsu.co.jp" }
   s.source       = { :git => "https://github.com/hyperledger/iroha-ios.git", :tag => "#{s.version}" }
   s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.10'
   s.source_files = 'IrohaSwift/libs/*.{h,c}','IrohaSwift/*.{h,swift}'
   s.public_header_files = 'IrohaSwift/*.h'
   s.preserve_paths  = 'IrohaSwift/libs/module.modulemap'
